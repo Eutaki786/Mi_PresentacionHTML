@@ -1,0 +1,101 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header con degradado */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 0 10%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* Barra de navegación superior con Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    left: 10%;
+}
+
+.logo-texto {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff9f43;
+}
+
+/* Contenido del header */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.text-container {
+    max-width: 60%;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: #ff9f43;
+}
+
+header h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #cbd5e0;
+}
+
+header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* El logo cuadrado con bordes redondeados */
+header img {
+    border-radius: 20px;
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Resaltes de texto */
+header p strong {
+    color: #ff9f43;
+    font-weight: 600;
+}
