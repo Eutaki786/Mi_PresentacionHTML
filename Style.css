@@ -421,9 +421,11 @@ h1, h2, h3, .section-title, .logo-texto {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    } 
 
     table {
         font-size: 0.8rem; 
+    }
 
     .contact-form {
         padding: 15px;
@@ -434,4 +436,4 @@ h1, h2, h3, .section-title, .logo-texto {
         gap: 20px;
         text-align: center;
     }
-}
+} 
