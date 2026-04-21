@@ -353,7 +353,7 @@ h1, h2, h3, .section-title, .logo-texto {
 .contact-info a:hover {
     text-decoration: underline;
 }
-/* Esto va al final de tu CSS */
+
 .contact-info a {
     color: #ff9f43 !important; 
     font-weight: bold;
@@ -368,4 +368,70 @@ h1, h2, h3, .section-title, .logo-texto {
 .contact-info a:hover {
     background-color: #ff9f43;
     color: #2c5364 !important;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 80px 5% 40px 5%;
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column-reverse; 
+        gap: 20px;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+   
+    .about-grid, .skills-grid, .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+        width: 90%;
+        left: 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h3 {
+        font-size: 1.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+
+    table {
+        font-size: 0.8rem; 
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
